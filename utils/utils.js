@@ -14,7 +14,14 @@ function fsExistsSync(path) {
 function cleanFolder(path) {
   const dirList = fs.readdirSync(path)
   dirList.forEach(function (fileName) {
-    fs.unlinkSync(path + '/' + fileName)
+    const curPath = path + '/' + fileName
+    if(fs.statSync(curPath).isDirectory()) {
+      // recurse  
+      cleanFolder(curPath);  
+    } else {
+      // delete file  
+      fs.unlinkSync(curPath)
+    }
   })
 }
 

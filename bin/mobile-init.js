@@ -61,8 +61,11 @@ function init (path) {
       console.log(err)
       return
     }
+    console.log('')
     console.log('download complate, You can:')
-    console.log('cd ' + path)
+    console.log('')
+    console.log('cd ' + path.replace('./', ''))
+    console.log('')
     console.log('$npm install')
     console.log('')
     console.log('$npm run dev')
