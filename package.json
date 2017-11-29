@@ -1,0 +1,21 @@
+{
+  "name": "mobile-cli",
+  "version": "1.0.0",
+  "bin": {
+    "mobile": "bin/mobile.js"
+  },
+  "description": "init project for mobile network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zfx",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "download-git-repo": "^1.0.1",
+    "fs": "0.0.1-security",
+    "inquirer": "^4.0.0",
+    "ora": "^1.3.0"
+  }
+}
