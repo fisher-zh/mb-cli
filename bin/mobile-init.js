@@ -35,7 +35,7 @@ if (!fsExistsSync(projectPath)) {
 } else {
   inquirer.prompt([{
     type: 'confirm',
-    message: 'The target is exist, continue?',
+    message: 'The target is exist, it will be empty, continue?',
     name: 'ok'
   }]).then(answers => {
     if (answers.ok) {
@@ -55,7 +55,7 @@ if (!fsExistsSync(projectPath)) {
 function init (path) {
   const spinner = ora('downloading template')
   spinner.start()
-  download('fisher-zh/vue-typescript', path, function(err) {
+  download('fisher-zh/mb-template-pc', path, function(err) {
     spinner.stop()
     if (err) {
       console.log(err)
@@ -68,23 +68,3 @@ function init (path) {
     console.log('$npm run dev')
   })
 }
-
-// inquirer.prompt([{
-//   type: 'input',
-//   message: 'it is a test',
-//   name: 'usercenter'
-// }]).then(answers => {
-//   console.log(answers)
-// }).catch(res => {
-//   console.log(res)
-// })
-
-// inquirer.prompt([{
-//   type: 'confirm',
-//   message: 'it is a test',
-//   name: 'ok'
-// }]).then(answers => {
-//   console.log(answers)
-// }).catch(res => {
-//   console.log(res)
-// })
