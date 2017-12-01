@@ -17,8 +17,8 @@ program
 program.on('--help', () => {
   console.log('  Examples:')
   console.log()
-  console.log('    # create a new project with an official template')
-  console.log('    $ mobile init my-project')
+  console.log('    # create a new regular project with an official template')
+  console.log('    $ regular init my-project')
   console.log()
 })
 // help end
@@ -55,7 +55,7 @@ if (!fsExistsSync(projectPath)) {
 function init (path) {
   const spinner = ora('downloading template')
   spinner.start()
-  download('fisher-zh/mb-template-pc', path, function(err) {
+  download('fisher-zh/webpack-regular', path, function(err) {
     spinner.stop()
     if (err) {
       console.log(err)
