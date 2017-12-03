@@ -1,17 +1,17 @@
-## mobile-cli
+## regular-cli
 
-init a usercenter pc project
+init a webpack project for regularjs
 
 #### Installation
 ```
-$ npm install -g mobile-cli
+$ npm install -g regular-cli
 ```
 
 #### Usage
 ```
-$ mobile init <project-name>
+$ regular init <project-name>
 ```
 ##### Example:
 ```
-$ mobile init my-project
+$ regular init my-project
 ```
