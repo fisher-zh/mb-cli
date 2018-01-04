@@ -23,6 +23,7 @@ function cleanFolder(path) {
       fs.unlinkSync(curPath)
     }
   })
+  fs.rmdirSync(path);
 }
 
 module.exports = {
