@@ -15,3 +15,7 @@ $ regular init <project-name>
 ```
 $ regular init my-project
 ```
+
+###### 模板源码地址:
+[webpack-regualar](https://github.com/fisher-zh/webpack-regular)
+欢迎 star 和 issue

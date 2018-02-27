@@ -1,6 +1,6 @@
 {
   "name": "regular-cli",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "bin": {
     "regular": "bin/regular.js"
   },
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "zfx",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
     "download-git-repo": "^1.0.1",
