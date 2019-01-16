@@ -62,6 +62,8 @@ function init (path) {
       return
     }
     console.log('')
+    console.log('github: https://github.com/fisher-zh/webpack-regular/')
+    console.log('')
     console.log('download complate, You can:')
     console.log('')
     console.log('cd ' + path.replace('./', ''))
